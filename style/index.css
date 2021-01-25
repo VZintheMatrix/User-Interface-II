@@ -1,1 +1,172 @@
-/* Add CSS styling here */
+/* Add CSS styling here*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*css reset aboe */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.header{
+	display: flex;
+	border: 1px solid black;
+	height: 10vh;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 40px;
+	font-weight:bolder;
+	font-size: 70px;
+	color:solid black;
+	text-shadow:lightcoral 5px 2px;
+}
+.navigate{
+	display: flex;
+	background-color: black;
+	padding: 10px;
+	border: 1px whitesmoke;
+	height: 10vh;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+.navigate a{
+	background-color: blueviolet;
+	border: 1px solid black;
+	border-style:hidden;
+	border-radius: 5px;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight:bold;
+	text-shadow:whitesmoke;
+}
+body{
+	color: solid black;
+	font-family:'Courier New', Courier, monospace ;
+	border: 2px whitesmoke;
+	margin: 10px;
+}
+h2{
+	display:flex;
+	border: 1px solid black;
+	border-style:groove;
+	justify-content: center;
+	font-size:30px;
+	padding: 10px;
+
+	
+
+}
+.intro{
+	display: flex;
+	flex-flow: column;
+	border: 1px solid black;
+	justify-content: center;
+	align-content: center;
+	background-color: light;
+	padding: 30px;
+}
+.intro h2{
+	background-color: whitesmoke;
+	border-radius: 10px;
+	border: 0;
+	text-decoration-style: wavy;
+	text-transform: uppercase;
+	text-shadow:blueviolet 2px 2px;
+	font-weight: bolder;
+}
+.intro p{
+	padding:20px;
+	color:blueviolet;
+
+}
+section{
+	display: flex;
+	flex-wrap: nowrap;
+	height:30vh;
+	border: 1px solid black;
+	box-sizing: border-box;
+	justify-content: space-evenly;
+	background-color: black;	
+}
+.main-proj{
+	display:flex;
+	background: url(https://picsum.photos/seed/picsum/200/300);
+	box-sizing:border-box;
+	border:3px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.main-proj a{
+	display: flex;
+	border: 1px solid whitesmoke;
+	background-color: black;
+	opacity: .4;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.projects{
+	display: flex;
+	background: url(https://picsum.photos/200/300);
+	height: 100%;
+	width: 180px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: 10px;
+	align-items: center;
+	justify-content: center;
+}
+.projects a{
+	text-decoration: none;
+	background-color:lightcoral;
+	opacity: .4;
+}
+.script{
+	display:flex;
+	color: blueviolet;
+	justify-content: center;
+	align-items: center;
+	margin: 20px;
+}
