@@ -1,0 +1,31 @@
+body{
+    background-color: teal;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.headcontain {
+    display: flex;
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: bolder;
+    text-shadow:chocolate 1px 3px;
+}
+.hobby{
+    display: flex;
+    background-color: chocolate;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 20vh;
+    margin: 20px;
+
+}
+.hobby:hover{
+    transition: 2s;
+    opacity: .2;
+    font-weight: bolder;
+    
+
+}
