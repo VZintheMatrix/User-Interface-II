@@ -1,1 +1,221 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/*border: 0;*/
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 1% auto;
+    max-width:100%;
+
+  /*put a border around everything to see where it stops and starts*/
+/*     border:1px solid grey; */
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font: size 10rem;
+    line-height: 1.5;
+    color:#4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+    margin: 1% 5%;
+}
+h1, h2, h3, h4{
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+    color:#000;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size:2.5rem;
+}
+section{
+    padding: 4% 0;
+}
+a{
+    text-decoration:none;
+    letter-spacing: 3px;
+    color:#4F4F4F;
+}
+a:hover{
+    color:#fcb131;
+}
+i{
+    font-size: 5rem;
+}
+/*Header Styles*/
+header{
+    height: 10%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*Introduction Styles*/
+.intro{
+    display: flex;
+    margin: 1% 0;
+    justify-content: center;
+}
+
+
+
+/*gallery styles*/
+
+.gallery{
+    display:flex;
+    justify-content: space-around;
+    height: 25vh;
+}
+.gallery div{
+    width: 40%;
+    margin: 1%;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.box a:hover{
+    background-color:cornsilk;
+    border-radius: 8px;
+    padding: 5%;
+}
+.box1{
+    background-image: url('https://images.unsplash.com/photo-1612814399449-d62fc71234c9?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.box2{
+    background-image: url('https://images.unsplash.com/photo-1613026468322-c1b22cd40fca?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fDZzTVZqVExTa2VRfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.box3{
+    background-image:url('//images.unsplash.com/photo-1508459855340-fb63ac591728?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3Mnw2c01WalRMU2tlUXx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box4{
+    background-image:url('https://images.unsplash.com/photo-1508560444034-40cfdb13cd19?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3NXw2c01WalRMU2tlUXx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*Main Proect Styles*/
+
+.main-project{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1613163773564-ae0bed41d1d0?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHhIeFlUTUhMZ09jfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}  
+.main-project div{
+    padding: 6px;
+    border-radius: 6px;
+}
+.gallery-text{
+    display: flex;
+    justify-content: center;
+   width: 50%; 
+}
+.gallery-text{
+    text-align: center;  
+}
+button:hover{
+    color:#fcb131;
+    padding: 1%;
+    transition: 2s;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1613163773564-ae0bed41d1d0?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHhIeFlUTUhMZ09jfHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 10vh;
+}
+
+@media (min-width: 992.99px){
+    body{
+        margin: 5% 10%; 
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 768px){
+    body{
+        margin: 10% 10%;
+        font-size: 1.8rem;
+    }
+    .box{
+        color: cornsilk;
+    }
+}
